@@ -1,0 +1,27 @@
+{
+  "name": "@ranjittherapids/private-package",
+  "version": "1.0.9",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "postpublish": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "ranjit",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
